@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AudioVisualizer</title>
+    <script src="./script.js" defer></script>
+    <script type="text/javascript" src="./music-tempo.min.js">
+
+    </script>
+    <link id="csslink" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="visualizer" ></canvas>
+    <div class="grid">
+      <label for="volume">Volume</label>
+      <input type="range" min="0" max="1" value=".5" step=".01" id="volume">
+
+      <label for="bass">Bass</label>
+      <input type="range" min="-10" max="10" value="0" step="1" id="bass">
+
+      <label for="mid">Mid</label>
+      <input type="range" min="-10" max="10" value="0" step="1" id="mid">
+
+      <label for="treble">Treble</label>
+      <input type="range" min="-10" max="10" value="0" step="1" id="treble">
+    </div>
+    <div id='dropArea' style='width:100%; height:100px;border-style:solid'>Drop File Here</div>
+    <div class="buttons">
+      <button type="button" id="play">Play</button>
+      <button type="button" id="pause">Pause</button>
+      <button type="button" id="stop">Stop</button>
+    </div>
+
+    <div id="bpm">
+      <p>Tempo: <a id="tempo"></a></p>
+      <p>Beats: <a id="beats"></a></p>
+    </div>
+    <div id="animationContainer">
+
+    </div>
+  </body>
+
+</html>
